@@ -76,8 +76,7 @@ The project follows a standard Next.js App Router architecture:
 - **Shared Search Logic**: Initially, search was called via internal API fetches. We moved this to a shared `src/lib/search.ts` module to eliminate port-configuration issues and improve reliability.
 - **Streaming Strategy**: We use a custom JSON chunking protocol to stream both search sources and AI-generated content simultaneously, allowing sources to appear instantly while the AI is still "thinking".
 - **LLM Choice**: Switched to Ollama for privacy and flexibility, providing a path for both local execution and managed cloud services.
-- **Scraper Resilience**: Migrated from `duck-duck-scrape` to `ddg-search` to better handle anti-bot detection and rate limits.
-
+ 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
